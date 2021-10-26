@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            transition: margin-left 3s linear 0s;
+            
+            transition: background-color 0s ease-out 0s, 
+                        margin-left 6s ease-in 0s; 
+                        margin-top 10s linear 0s;
+
+            margin-left: 0;
+        }
+
+        #box:hover {
+            background-color: green;
+            margin-left: 686px;
+            margin-top: 300px;
+        }
+
+
+        #circle:hover + circle{
+            fill:black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <svg>
+        <circle id="circle" cx=100 cy=100 r=20 fill="red"></circle>
+        <circle cx=100 cy=100 r=20 fill="green"></circle>
+
+    </svg>
+
+    <img id="box" src="../icon youtube.png" alt="">
+
+    <div id="box">
+
+    </div>
+
+</body>
+
+</html>

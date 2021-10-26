@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li:hover {
+            background-color: rgb(29, 141, 185);
+        }
+
+        li.outer {
+            display: inline-block;
+            margin-left: 3%;
+            line-height: 38px;
+            cursor: pointer;
+        }
+
+
+        nav {
+            background-color: skyblue;
+        }
+
+        .nested-list, .nested-list-child{
+            list-style-type: none;
+            display: none;
+            position: absolute;
+            background-color: skyblue;
+            padding: 0;
+        }
+
+        .nested-list-child{
+            left:70px;
+            top:20px;
+        }
+
+        #province-selector:hover .nested-list,
+        #punjab-selector:hover .nested-list-child
+        {
+            display:block;
+        }
+
+       
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <ol>
+            <li id="province-selector" class="outer">
+                Provnices
+
+                <ol class="nested-list">
+                    <li id="punjab-selector">
+                        Punjab
+                    
+                        <ol class="nested-list-child">
+                            <li>Faislabad</li>
+                            <li>Hafizabad</li>
+                            <li>Multan</li>
+                            <li>Lahore</li>
+                        </ol>
+
+                    </li>
+                    <li>Frontier</li>
+                    <li>Balochistan</li>
+                    <li>Sindh</li>
+                </ol>
+
+            </li>
+            <li class="outer">About</li>
+            <li class="outer">Contact</li>
+        </ol>
+    </nav>
+
+
+
+</body>
+
+</html
