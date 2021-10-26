@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        @keyframes movingFan {
+
+            from{
+                transform: rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+
+        @keyframes meriAnimation {
+
+            0%{
+                background-color: green;
+            }
+
+            20%{
+                background-color: yellow;
+            }
+
+            51%{
+                background-color: blue;
+
+            }
+
+            71%{
+                background-color: red;
+
+            }
+
+            100%{
+                background-color: purple;
+
+            }
+
+            /* from{
+            }
+
+            to{
+                background-color: red;
+                margin-top:200px;
+            } */
+            
+        }
+
+        #box{
+            width: 100px;
+            height: 100px;
+            /* background-color: green; */
+            animation: movingFan 8s linear 0s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <img id="box" src="fan.png" alt="">
+    <!-- <div id="box"></div> -->
+    
+</body>
+</html>

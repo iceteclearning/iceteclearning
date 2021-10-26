@@ -1,0 +1,8 @@
+ifram 
+is used for add external video in your websitr
+canvas
+is usexd for giving movement to any one as game. game development use tag canvas
+website photo.js
+a target-blank
+a href 
+is used for provide external video via link that give more way to show

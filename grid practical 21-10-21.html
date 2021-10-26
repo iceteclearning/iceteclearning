@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.parent{
+display: grid;
+width: 600px;
+height: 600px;
+column-gap: 10px;
+row-gap: 10px;
+grid-template: 
+"b1 b2 b2 b4"
+"b1 b3 b3 b4"
+"b5 b5 b5 b5"
+}
+
+.child:nth-child(1){
+    grid-area: b1;
+    border: 3px solid darkkhaki;
+}
+
+.child:nth-child(2){
+    grid-area: b2;
+    border: 3px solid green;
+}
+
+.child:nth-child(3){
+    grid-area: b3;
+    border: 3px solid red;
+}
+
+.child:nth-child(4){
+    grid-area: b4;
+    border: 3px solid blue;
+}
+.child:nth-child(5){
+    grid-area: b5;
+    border: 3px solid rgb(6, 167, 231);
+}
+</style> 
+</head>
+<body>
+   <div class="parent">
+       <div class="child"> </div>
+       <div class="child"></div>
+       <div class="child"></div>
+       <div class="child"></div>
+       <div class="child"></div>
+   </div> 
+</body>
+</html>

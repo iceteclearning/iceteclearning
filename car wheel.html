@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    
+    @keyframes movingwheels {
+from{
+    transform: rotate(0deg);
+}
+to{
+    transform: rotate(360deg);
+}
+
+    }
+#mycar {
+    width: 250px;
+    position: absolute;
+    top: 30%;
+    transition: margin-left 9s linear 0s;
+}
+#mycar:hover{
+margin-left: 1000px;
+}
+#mycar img{
+    max-width: 100%;
+}
+#wheel1{
+    width: 50px;
+    position: relative;
+   bottom: 130px;
+   left: 10px;
+    animation: movingwheels 26s linear 0s;
+}
+ #wheel2{
+    width: 50px;
+    position: relative;
+   bottom: 130px;
+   left: 130px;
+    animation: movingwheels 26s linear 0s;
+} 
+
+</style>
+</head>
+<body>
+    
+<div id="mycar">
+<img src="../car png112.png" alt="">
+<img src="../wheel 1.jpeg" alt="" id="wheel1">
+<img src="../wheel 2.jpeg" alt="" id="wheel2">
+
+</div>
+<img src="../road png.png" alt="">
+</body>
+</html>

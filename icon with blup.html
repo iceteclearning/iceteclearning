@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    #box {
+        width:200px;
+        height: 200px;
+        transform: skew(20deg, 20deg)
+        /* transform:scale(2, 2); */
+        /* transition: transform 3s linear 0s */
+        
+        /* transition: transform 3s linear 0s,
+                    margin-left 3s linear 0s; */
+        /* transform: rotate(180deg); */
+    }
+
+    #box:hover{
+        /* transform:scale(7, 0.5); */
+    }
+    /* #box {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            /* transition: margin-left 3s linear 0s; */
+/*             
+            transition: background-color 0s ease-out 0s, 
+                        margin-left 6s ease-in 0s;  */
+                        /* margin-top 10s linear 0s; */
+
+            /* margin-left: 0; */
+        }
+
+        #box:hover {
+            background-color: green;
+            margin-left: 686px;
+            /* margin-top: 300px; */
+        }
+
+
+        #circle:hover + circle{
+            fill:green;
+        } */
+    </style>
+
+</head>
+
+<body>
+
+    <svg>
+        <circle id="circle" cx=100 cy=100 r=20 fill="red"></circle>
+        <circle cx=150 cy=100 r=20 fill="white"></circle>
+
+    </svg>
+
+    <img id="box" src="car1.png" alt="">
+
+    <span>somec ontent  in here</span>
+    <!-- <div id="box">
+
+    </div> -->
+
+</body>
+
+</html>?

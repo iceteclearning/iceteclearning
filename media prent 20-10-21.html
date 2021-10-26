@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+ 
+ #parent{
+      height: 100px;
+      background-color: red;
+  }
+  @media screen and (min-width:600px) and (max-width:900px){
+ #parent{
+     background-color: yellow;
+ }
+
+
+  }
+  #main{
+      height: 200px;
+      background-color:green;
+  }
+  @media screen and (min-width:700px) and (max-width:900px){
+
+      #main{
+          background-color: blue;
+      }
+  }
+  
+
+
+  #main2{
+      height: 100px;
+      background-color: brown;
+  }
+  @media screen and (min-width: 600px) and (max-width: 900px){
+      #main2{
+          background-color: green;
+          vertical-align: middle;
+          display: table-cell;
+      }
+  }
+  #print{
+      height: 100px;
+      background-color: forestgreen;
+  }
+  @media print and (min-width: 500px) and (max-width: 900px){
+#print{
+    background-color: cornflowerblue;
+}
+
+  }
+  h1{
+      vertical-align: middle;
+      display: table-cell;
+  }
+  </style>
+</head>
+<body>
+    <div id="parent"> </div>
+<div id="main"><h1>bilal</h1></div>
+<div id="main2">bilal</div>
+<div id="print"></div>
+
+
+</body>
+</html>
